@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liyang Song — Homepage</title>
+  <meta name="description" content="Liyang Song — statistical genetics × AI. Developer of gsMap and MeDuSA. Ph.D., Westlake University.">
+  <meta name="author" content="Liyang Song">
+  <meta property="og:title" content="Liyang Song">
+  <meta property="og:description" content="Statistical genetics × AI · gsMap · MeDuSA · Westlake University">
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="assets/avatar.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23167C6E'/%3E%3Ctext x='32' y='44' font-family='Menlo,monospace' font-size='34' font-weight='700' text-anchor='middle' fill='%23fff'%3E%E2%9D%AF_%3C/text%3E%3C/svg%3E">
+
+  <!-- Set the theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<!-- ───────────────────────── top bar ───────────────────────── -->
+<header class="topbar" id="top">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">&lt;LiyangSong&gt;</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about" class="active">./about</a>
+      <a href="#news">./news</a>
+      <a href="#publications">./publications</a>
+      <a href="#software">./software</a>
+      <a href="#cv">./cv</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ───────────────────────── sidebar ───────────────────────── -->
+  <aside class="sidebar">
+    <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Liyang Song" width="480" height="480">
+    <h1 class="name">Liyang Song</h1>
+    <p class="role">Postdoctoral researcher<br>Yang Lab · Westlake University</p>
+    <p class="tagline">Statistical genetics × AI</p>
+
+    <ul class="links">
+      <li><a href="mailto:songliyang@westlake.edu.cn"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a></li>
+      <!-- TODO: add a public CV to files/ and uncomment
+      <li><a href="files/LiyangSong_CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg>CV</a></li>
+      -->
+      <!-- TODO: replace with your Google Scholar profile, e.g. https://scholar.google.com/citations?user=XXXXXXXX -->
+      <li><a href="https://scholar.google.com/scholar?q=author%3A%22Liyang+Song%22+gsMap" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Google Scholar</a></li>
+      <li><a href="https://github.com/LeonSong1995" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a></li>
+      <li><a href="https://orcid.org/0009-0003-4424-172X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 8v8M12 8h2.5a4 4 0 0 1 0 8H12z"/></svg>ORCID</a></li>
+    </ul>
+  </aside>
+
+  <!-- ───────────────────────── main ───────────────────────── -->
+  <main class="content">
+
+    <!-- terminal intro (typed by assets/main.js) -->
+    <section class="terminal" aria-label="Terminal-style introduction">
+      <div class="term-bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <em>liyang@westlake — zsh</em>
+      </div>
+      <pre class="term-body" id="term" tabindex="0" title="Click to skip the animation"></pre>
+    </section>
+
+    <!-- ── About ── -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <ul class="bullets">
+        <li>
+          Hi, I am Liyang. I received my Ph.D. in statistical genetics from
+          <a href="https://www.westlake.edu.cn/" target="_blank" rel="noopener">Westlake University</a>
+          (joint program with Zhejiang University) in 2026, advised by Prof.
+          <a href="https://yanglab.westlake.edu.cn/" target="_blank" rel="noopener">Jian Yang</a>.
+          I am now a postdoctoral researcher in the Yang Lab at Westlake University.
+        </li>
+        <li>
+          My research sits at the intersection of <strong>statistical genetics</strong> and
+          <strong>artificial intelligence</strong>. I develop statistical models and deep-learning
+          methods that integrate single-cell and spatial omics data with human genetics, to identify
+          the cell states and tissue locations associated with complex traits and diseases. Topics include:
+          <ul class="sub">
+            <li>Integrating GWAS with spatial and single-cell transcriptomics</li>
+            <li>Graph neural networks and deep learning for omics data</li>
+            <li>Mixed models and cellular deconvolution</li>
+            <li>Scalable, open-source software for large-scale genomic data</li>
+          </ul>
+        </li>
+        <li>
+          I developed <a href="https://github.com/JianYang-Lab/gsMap" target="_blank" rel="noopener">gsMap</a>
+          (<em>Nature</em>, 2025), which maps trait-associated cells in tissue by combining GWAS summary
+          statistics with spatial transcriptomics, and
+          <a href="https://github.com/JianYang-Lab/MeDuSA" target="_blank" rel="noopener">MeDuSA</a>
+          (<em>Nature Computational Science</em>, 2023), a mixed-model method for estimating cell-state
+          abundance from bulk RNA-seq.
+        </li>
+        <li>
+          I am always open to discussions and collaborations — feel free to reach out via
+          <a href="mailto:songliyang@westlake.edu.cn">email</a>. :)
+        </li>
+      </ul>
+    </section>
+
+    <!-- ── News ── -->
+    <section id="news" class="section">
+      <h2>News</h2>
+      <ul class="news">
+        <li><time>10/2026</time><span>Honored to receive the <strong>Ray Wu Prize</strong> at the 15th Ray Wu Symposium (USTC, Hefei), where I also gave a talk on gsMap.</span></li>
+        <li><time>06/2026</time><span>Received my Ph.D. from Westlake University. 🎓</span></li>
+        <li><time>10/2025</time><span>Presented gsMap (poster) at the <a href="https://www.ashg.org/meetings/2025meeting/" target="_blank" rel="noopener">ASHG 2025 Annual Meeting</a>, Boston.</span></li>
+        <li><time>2025</time><span>Honored to receive the <strong>President's Award</strong> of Westlake University, the <strong>Tencent Qingyun Award</strong> and the Su Wu Scholarship.</span></li>
+        <li><time>2025</time><span>My perspective, <a href="https://doi.org/10.1038/s41576-025-00877-4" target="_blank" rel="noopener">Mapping trait-associated cells with spatial transcriptomics</a>, is out in <em>Nature Reviews Genetics</em>.</span></li>
+        <li><time>03/2025</time><span><a href="https://doi.org/10.1038/s41586-025-08757-x" target="_blank" rel="noopener">gsMap</a> is published in <strong><em>Nature</em></strong> (<a href="https://github.com/JianYang-Lab/gsMap" target="_blank" rel="noopener">code</a>, <a href="https://yanglab.westlake.edu.cn/gsmap/home" target="_blank" rel="noopener">docs</a>). Later selected as a research highlight by <em>Nature Methods</em> and <em>Nature Reviews Genetics</em>.</span></li>
+        <li><time>05/2024</time><span>Our review <a href="https://pubmed.ncbi.nlm.nih.gov/38734482/" target="_blank" rel="noopener">From genetic associations to genes</a> is published in <em>Trends in Genetics</em>.</span></li>
+        <li><time>07/2023</time><span><a href="https://doi.org/10.1038/s43588-023-00487-2" target="_blank" rel="noopener">MeDuSA</a> is published in <em>Nature Computational Science</em> (<a href="https://github.com/JianYang-Lab/MeDuSA" target="_blank" rel="noopener">code</a>).</span></li>
+        <li><time>2023</time><span>Received the Dean's Award of Westlake University and the National Scholarship.</span></li>
+      </ul>
+    </section>
+
+    <!-- ── Publications ── -->
+    <section id="publications" class="section">
+      <h2>Selected Publications</h2>
+      <p class="legend">
+        (<code>#</code> equal contribution, <code>*</code> corresponding author) &nbsp;·&nbsp;
+        Full list on <a href="https://scholar.google.com/scholar?q=author%3A%22Liyang+Song%22+gsMap" target="_blank" rel="noopener">Google Scholar</a>
+      </p>
+
+      <h3>Spatial genetics</h3>
+      <ul class="pubs">
+        <li class="pub">
+          <div class="pub-head">
+            <span class="badge"><b>2025</b><i class="v-nature">Nature</i></span>
+            <a class="pub-title" href="https://doi.org/10.1038/s41586-025-08757-x" target="_blank" rel="noopener">Spatially resolved mapping of cells associated with human complex traits</a>
+          </div>
+          <div class="pub-authors"><strong>Liyang Song</strong><sup>#</sup>, Wenhao Chen<sup>#</sup>, Junren Hou, Minmin Guo, Jian Yang<sup>*</sup></div>
+          <div class="pub-meta"><em>Nature</em> 641, 932–941 (2025)</div>
+          <div class="pub-links">
+            <a class="gh" href="https://github.com/JianYang-Lab/gsMap" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .67.42l1.88 3.8 4.2.61a.75.75 0 0 1 .41 1.28l-3.03 2.96.72 4.18a.75.75 0 0 1-1.09.79L8 12.35l-3.76 1.98a.75.75 0 0 1-1.09-.79l.72-4.18L.84 6.36a.75.75 0 0 1 .41-1.28l4.2-.61L7.33.67A.75.75 0 0 1 8 .25z"/></svg>Stars <b data-stars="JianYang-Lab/gsMap">229</b></a>
+            <a href="https://doi.org/10.1038/s41586-025-08757-x" target="_blank" rel="noopener">[paper]</a>
+            <a href="https://github.com/JianYang-Lab/gsMap" target="_blank" rel="noopener">[code]</a>
+            <a href="https://yanglab.westlake.edu.cn/gsmap/home" target="_blank" rel="noopener">[docs]</a>
+            <a href="https://pypi.org/project/gsmap/" target="_blank" rel="noopener">[PyPI]</a>
+          </div>
+          <div class="pub-note">★ Research highlight in <em>Nature Methods</em> and <em>Nature Reviews Genetics</em></div>
+        </li>
+        <li class="pub">
+          <div class="pub-head">
+            <span class="badge"><b>2025</b><i class="v-nrg">Nat Rev Genet</i></span>
+            <a class="pub-title" href="https://doi.org/10.1038/s41576-025-00877-4" target="_blank" rel="noopener">Mapping trait-associated cells with spatial transcriptomics</a>
+          </div>
+          <div class="pub-authors"><strong>Liyang Song</strong></div>
+          <div class="pub-meta"><em>Nature Reviews Genetics</em> 26, 739 (2025)</div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1038/s41576-025-00877-4" target="_blank" rel="noopener">[paper]</a>
+          </div>
+        </li>
+      </ul>
+
+      <h3>Cellular deconvolution</h3>
+      <ul class="pubs">
+        <li class="pub">
+          <div class="pub-head">
+            <span class="badge"><b>2023</b><i class="v-ncs">Nat Comput Sci</i></span>
+            <a class="pub-title" href="https://doi.org/10.1038/s43588-023-00487-2" target="_blank" rel="noopener">Mixed model-based deconvolution of cell-state abundances (MeDuSA) along a one-dimensional trajectory</a>
+          </div>
+          <div class="pub-authors"><strong>Liyang Song</strong>, Xiwei Sun, Ting Qi, Jian Yang<sup>*</sup></div>
+          <div class="pub-meta"><em>Nature Computational Science</em> 3, 630–643 (2023)</div>
+          <div class="pub-links">
+            <a class="gh" href="https://github.com/JianYang-Lab/MeDuSA" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .67.42l1.88 3.8 4.2.61a.75.75 0 0 1 .41 1.28l-3.03 2.96.72 4.18a.75.75 0 0 1-1.09.79L8 12.35l-3.76 1.98a.75.75 0 0 1-1.09-.79l.72-4.18L.84 6.36a.75.75 0 0 1 .41-1.28l4.2-.61L7.33.67A.75.75 0 0 1 8 .25z"/></svg>Stars <b data-stars="JianYang-Lab/MeDuSA">46</b></a>
+            <a href="https://doi.org/10.1038/s43588-023-00487-2" target="_blank" rel="noopener">[paper]</a>
+            <a href="https://github.com/JianYang-Lab/MeDuSA" target="_blank" rel="noopener">[code]</a>
+          </div>
+        </li>
+      </ul>
+
+      <h3>Reviews</h3>
+      <ul class="pubs">
+        <li class="pub">
+          <div class="pub-head">
+            <span class="badge"><b>2024</b><i class="v-tig">Trends Genet</i></span>
+            <a class="pub-title" href="https://pubmed.ncbi.nlm.nih.gov/38734482/" target="_blank" rel="noopener">From genetic associations to genes: methods, applications, and challenges</a>
+          </div>
+          <div class="pub-authors">Ting Qi<sup>#</sup>, <strong>Liyang Song</strong><sup>#</sup>, Yazhou Guo<sup>#</sup>, Chang Chen<sup>#</sup>, Jian Yang<sup>*</sup></div>
+          <div class="pub-meta"><em>Trends in Genetics</em> 40, 642–667 (2024)</div>
+          <div class="pub-links">
+            <a href="https://pubmed.ncbi.nlm.nih.gov/38734482/" target="_blank" rel="noopener">[paper]</a>
+          </div>
+        </li>
+      </ul>
+
+      <h3>Earlier work</h3>
+      <ul class="pubs">
+        <li class="pub">
+          <div class="pub-head">
+            <span class="badge"><b>2018</b><i class="v-grey">Clin J Pain</i></span>
+            <a class="pub-title" href="https://doi.org/10.1097/AJP.0000000000000622" target="_blank" rel="noopener">The effect of combination pharmacotherapy on low back pain: a meta-analysis</a>
+          </div>
+          <div class="pub-authors"><strong>L. Song</strong>, P. Qiu, J. Xu, J. Lv, S. Wang, C. Xia, P. Chen, S. Fan, X. Fang, X. Lin</div>
+          <div class="pub-meta"><em>The Clinical Journal of Pain</em> 34, 1039–1046 (2018)</div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1097/AJP.0000000000000622" target="_blank" rel="noopener">[paper]</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ── Software ── -->
+    <section id="software" class="section">
+      <h2>Software</h2>
+      <div class="cards">
+        <article class="card">
+          <header>
+            <a class="card-title" href="https://github.com/JianYang-Lab/gsMap" target="_blank" rel="noopener">gsMap</a>
+            <span class="lang"><i style="--c:#3572A5"></i>Python</span>
+          </header>
+          <p>Genetically informed spatial mapping of cells for complex traits. Integrates GWAS summary statistics with spatial transcriptomics to map trait-associated cells in tissue.</p>
+          <footer>
+            <span class="stars">★ <b data-stars="JianYang-Lab/gsMap">229</b></span>
+            <a href="https://yanglab.westlake.edu.cn/gsmap/home" target="_blank" rel="noopener">docs</a>
+            <a href="https://pypi.org/project/gsmap/" target="_blank" rel="noopener">pypi</a>
+          </footer>
+        </article>
+        <article class="card">
+          <header>
+            <a class="card-title" href="https://github.com/JianYang-Lab/MeDuSA" target="_blank" rel="noopener">MeDuSA</a>
+            <span class="lang"><i style="--c:#198CE7"></i>R</span>
+          </header>
+          <p>Fine-resolution cellular deconvolution. Uses an scRNA-seq reference and a linear mixed model to estimate cell-state abundance along a trajectory from bulk RNA-seq.</p>
+          <footer>
+            <span class="stars">★ <b data-stars="JianYang-Lab/MeDuSA">46</b></span>
+            <a href="https://github.com/JianYang-Lab/MeDuSA" target="_blank" rel="noopener">github</a>
+          </footer>
+        </article>
+        <article class="card">
+          <header>
+            <a class="card-title" href="https://pypi.org/project/gsMap3D/" target="_blank" rel="noopener">gsMap3D</a>
+            <span class="lang"><i style="--c:#3572A5"></i>Python</span>
+          </header>
+          <p>Extends gsMap to 3D spatial transcriptomics atlases: mapping the cellular etiology of complex traits in 3D tissue architecture. Manuscript under revision.</p>
+          <footer>
+            <span class="wip">in revision</span>
+            <a href="https://pypi.org/project/gsMap3D/" target="_blank" rel="noopener">pypi</a>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── CV: education / honors / talks ── -->
+    <section id="cv" class="section">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li>
+          <time>2021 – 2026</time>
+          <div><strong>Ph.D., Statistical Genetics</strong> — Westlake University (joint program with Zhejiang University), Hangzhou<br><span class="muted">Advisor: Prof. Jian Yang</span></div>
+        </li>
+      </ul>
+
+      <h2>Honors &amp; Awards</h2>
+      <ul class="bullets compact">
+        <li><strong>Ray Wu Prize</strong>, Ray Wu Memorial Fund (2026)</li>
+        <li><strong>President's Award</strong>, Westlake University (2025)</li>
+        <li><strong>Tencent Qingyun Award</strong> (2025)</li>
+        <li><strong>Su Wu Scholarship</strong>, Westlake University (2025)</li>
+        <li><strong>National Scholarship</strong>, Westlake University – Zhejiang University (2023)</li>
+        <li><strong>Dean's Award</strong>, Westlake University (2023)</li>
+        <li><strong>Outstanding Student</strong>, Zhejiang University (2023, 2025)</li>
+        <li><strong>Excellent Student</strong>, Zhejiang University (2023, 2024, 2025)</li>
+        <li><strong>Learning and Innovation Award</strong>, Westlake University (2024, 2025)</li>
+        <li><strong>Knowledge Exploration Award</strong>, Westlake University (2023)</li>
+      </ul>
+
+      <h2>Talks &amp; Posters</h2>
+      <ul class="timeline">
+        <li>
+          <time>10/2026</time>
+          <div>Award talk — <em>Dissecting cellular heterogeneity and spatial context in human complex traits</em>. The 15th Ray Wu Symposium, University of Science and Technology of China, Hefei, China.</div>
+        </li>
+        <li>
+          <time>11/2025</time>
+          <div>Invited talk — <em>Dissecting the cells and spatial contexts underlying human complex diseases</em>. Jiao–Chuang Academic Forum, Shanghai Jiao Tong University, Shanghai, China.</div>
+        </li>
+        <li>
+          <time>10/2025</time>
+          <div>Poster — <em>gsMap: spatially resolved mapping of cells associated with human complex traits</em>. ASHG 2025 Annual Meeting, Boston, USA.</div>
+        </li>
+        <li>
+          <time>03/2025</time>
+          <div>Invited talk — <em>Spatially resolved mapping of cells associated with human complex traits</em>. Human Genetics Exchange Network seminar, online.</div>
+        </li>
+        <li>
+          <time>07/2024</time>
+          <div>Talk — <em>Spatially resolved mapping of cells associated with human complex traits</em>. The 9th National Doctoral Forum on Life Sciences, Life Sciences Institute, Zhejiang University, Hangzhou, China.</div>
+        </li>
+        <li>
+          <time>07/2024</time>
+          <div>Invited talk — <em>Mixed model-based deconvolution of cell-state abundances</em>. 2024 Hangzhou International Conference on Frontiers of Data Science, Hangzhou, China.</div>
+        </li>
+        <li>
+          <time>08/2023</time>
+          <div>Talk — <em>Mixed model-based deconvolution of cell-state abundance</em>. Topic-contributed session “Computational and statistical methods for modern genetic studies”, Joint Statistical Meetings (JSM 2023), Toronto, Canada.</div>
+        </li>
+        <li>
+          <time>04/2023</time>
+          <div>Talk — <em>MeDuSA: mixed model-based deconvolution of cell-state abundances</em>. Young Scholars Forum, the 1st Yangtze River Delta Bioinformatics Conference, Huzhou, China.</div>
+        </li>
+      </ul>
+
+      <h2>Teaching</h2>
+      <ul class="bullets compact">
+        <li>Teaching assistant, BIO3002 Biostatistics (undergraduate), Westlake University</li>
+      </ul>
+
+      <!-- TODO: restore once a public CV is in files/
+      <p class="cv-link">Full CV: <a href="files/LiyangSong_CV.pdf" target="_blank" rel="noopener">LiyangSong_CV.pdf</a></p>
+      -->
+    </section>
+
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© <span id="year">2026</span> Liyang Song · Hangzhou</span>
+    <nav>
+      <a href="#about">About</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#software">Software</a><a href="#cv">CV</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
